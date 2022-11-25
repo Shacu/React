@@ -1,0 +1,7 @@
+.navBarDiv {
+    background-color: antiquewhite;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 1.2 rem;
+};
+
+export default navBar;
