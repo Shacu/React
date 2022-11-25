@@ -1,5 +1,6 @@
 
-import navBar from './Components/NavBar/navBar.css';
+import './NavBar.css'
+import CardWidget from '../CardWidget/CardWidget.js';
 
 const NavBar = () => {
     return (
@@ -22,6 +23,9 @@ const NavBar = () => {
                             </li>
                             <li>
                                 <a href="#">¿Quienes somos?</a>
+                            </li>
+                            <li>
+                                <CardWidget />
                             </li>
                         </ul>
                     </div>
