@@ -1,7 +1,7 @@
 [
-    {"nombre": "gorra 1", "precio": "1500", "img": ".../img/gorra1.jpg", "id": "1"},
-    {"nombre": "buzo", "precio": "6000", "img": ".../img/buzo.jpg", "id": "2"},
-    {"nombre": "shores oversize", "precio": "4500", "img": ".../img/cortos.jpg", "id": "3"},
-    {"nombre": "remera", "precio": "5000", "img": ".../img/remera.jpg", "id": "4"}
+    {"nombre": "gorra 1", "precio": "1500", "img": "/imgs/gorra1.jpg", "id": "1"},
+    {"nombre": "buzo", "precio": "6000", "img": "/imgs/buzo.jpg", "id": "2"},
+    {"nombre": "shores oversize", "precio": "4500", "img": "/imgs/cortos.jpg", "id": "3"},
+    {"nombre": "remera", "precio": "5000", "img": "/imgs/remera.jpg", "id": "4"}
 ]
 

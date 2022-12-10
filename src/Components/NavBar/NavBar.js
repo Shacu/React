@@ -1,6 +1,7 @@
 
 import './NavBar.css'
 import CardWidget from '../CardWidget/CardWidget.js';
+import { Link } from 'react-router-dom';
 
 const NavBar = () => {
     return (
@@ -8,15 +9,15 @@ const NavBar = () => {
             <nav>
                 <div>
                     <div>
-                        <a>
+                        <Link to= {"/"}>
                         <img src="" alt="Logo" />
                         Broked
-                        </a>
+                        </Link>
                     </div>
                     <div>
                         <ul>
                             <li>
-                                <a href="#">Tienda</a>
+                                <link to={"/ItemDetailContainer"}>Tienda</link>
                             </li>
                             <li>
                                 <a href="#">Envios</a>

@@ -1,5 +1,4 @@
 import { useEffect, useState } from "react";
-import '/Items.json';
 
 const ItemListContainer = (props) => {
     const [items, setItems] = useState([])
@@ -14,19 +13,18 @@ const ItemListContainer = (props) => {
 
 
     return (
-        <>
-        <p>{props.src}</p>
         <div>
-            {items.map((arrItems) => (
-                <div>{arrItems.nombre}</div>
+           <p>{props.src}</p>
+           {items.map((arrItems) => (
+                <>
+                <div>
+                   <h5>{arrItems.nombre}</h5>
+                   <img src={arrItems.img} alt="Card image cap"></img>
+                   <p>{arrItems.precio}</p>
+                </div>
+                </>
             ))}
-        <img src="" alt="Card image cap"></img>
-            <div>
-                <h5>Card title</h5>
-                <p>Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-            </div>
         </div>
-        </>
     );
 };
 
