@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
+import './ItemListContainer.css';
 
 const ItemListContainer = (props) => {
     const [items, setItems] = useState([])
@@ -18,10 +19,10 @@ const ItemListContainer = (props) => {
            <p>{props.src}</p>
            {items.map((arrItems) => (
                 <>
-                <div>
+                <div className="cardItems">
                    <h5>{arrItems.nombre}</h5>
-                   <Link to={'/ItemDetailContainer/${id}'}><img src={arrItems.img} alt="Card image cap"></img></Link>
-                   <p>{arrItems.precio}</p>
+                   <Link to={`/ItemDetailContainer/${arrItems.id}`}><img src={arrItems.img} alt="Card image cap" className="imgCardItem"></img></Link>
+                   <p>${arrItems.precio}</p>
                 </div>
                 </>
             ))}

@@ -1,0 +1,11 @@
+.cardItems {
+    width: 30vw;
+    height: 30vh;
+    border: 1em;
+    border-color: black;
+}
+
+.imgCardItem {
+    height: 70%;
+    width: 80%;
+}
