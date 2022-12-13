@@ -5,18 +5,14 @@ import { Link } from "react-router-dom";
 const ItemDetailContainer = () => {
     const { id } = useParams();
 
-    useEffect(() => {
-        fetch(`/ItemDetailContainer/${id}`)
-    })
-    
     const [items, setItems] = useState([])
 
     useEffect(() => {
         fetch("/Items.json")
         .then(Response => Response.json())
-        .then(item => {
-            setItems(item)
-        })
+        .then(item => {setItems(item)})
+        .then((data) => setItems(data.find((item)=> item.id === parseInt(id))))
+      .catch((err) => console.log(err));
     },[])
 
 
