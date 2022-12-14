@@ -24,6 +24,7 @@ const ItemListContainer = (props) => {
                    <Link to={`/ItemDetailContainer/${arrItems.id}`}><img src={arrItems.img} alt="Card image cap" className="imgCardItem"></img></Link>
                    <p>${arrItems.precio}</p>
                 </div>
+                <hr></hr>
                 </>
             ))}
         </div>

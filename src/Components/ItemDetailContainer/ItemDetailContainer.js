@@ -11,18 +11,20 @@ const ItemDetailContainer = () => {
         fetch("/Items.json")
         .then(Response => Response.json())
         .then(item => {setItems(item)})
-        .then((data) => setItems(data.find((item)=> item.id === parseInt(id))))
-      .catch((err) => console.log(err));
     },[])
+
+    const itemsFilter = items.filter(filtro => filtro.id === id)
+
+    console.log(itemsFilter)
 
 
     return (
         <div>
-           {items.map((arrItems) => (
+           {itemsFilter.map((arrItems) => (
                 <>
                 <div className="cardItems">
                    <h5>{arrItems.nombre}</h5>
-                   <Link to={`/ItemDetailContainer/${arrItems.id}`}><img src={arrItems.img} alt="Card image cap" className="imgCardItem"></img></Link>
+                   <img src={arrItems.img} alt="Card image cap" className="imgCardItem"></img>
                    <p>${arrItems.precio}</p>
                 </div>
                 </>
